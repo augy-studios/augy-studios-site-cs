@@ -58,6 +58,15 @@
 			  var audio = document.getElementById("audio");
 			  audio.play();
 			}
+
+			var listOfSongs = [
+				"https://cdn.augystudios.com/media/music/While-The-City-Sleeps.mp3",
+				"https://cdn.augystudios.com/media/music/nggyu-piano-lt.mp3"
+			];
+
+			var randomSong = listOfSongs[(Math.floor(Math.random() * (listOfSongs.length)))]
+
+			audio.src = randomSong;
 		  </script>
 
 		<section class="hero is-fullheight">
@@ -65,7 +74,7 @@
 				<div class="container has-text-centered">
 					<div class="column is-8 is-offset-2 is-6-widescreen is-offset-3-widescreen">
 						<p class="title is-1">COMING SOON<a style="color:black" onclick="playCSDL()">™</a></p>
-						<audio id="audio" src="https://cdn.augystudios.com/media/music/While-The-City-Sleeps.mp3"></audio>
+						<audio id="audio"></audio>
 						<div class="container area-center">
 							<div class="buttons is-centered">
 								<a class="button is-medium is-twitter" href="https://twitter.com/augyteo" target="_blank">
