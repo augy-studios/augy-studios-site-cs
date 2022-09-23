@@ -59,7 +59,9 @@
 				"https://cdn.augystudios.com/media/music/nggyu-piano-lt.mp3"
 			];
 
-			var randomSong = listOfSongs[(Math.floor(Math.random() * (listOfSongs.length)))]
+			var randomIndex = Math.floor(Math.random() * listOfSongs.length);
+
+			var randomSong = listOfSongs[randomIndex];
 
 			function playCSDL() {
 			  var audio = document.getElementById("audio");
