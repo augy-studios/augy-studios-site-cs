@@ -69,14 +69,7 @@
 			  audio.play();
 			}
 
-			if (randomSong == "https://cdn.augystudios.com/media/music/While-The-City-Sleeps.mp3")
-			{
-				document.getElementById("textChange").innerHTML = "You're listening to: Lee Pomeroy - While The City Sleeps";
-			}
-			else if (randomSong == "https://cdn.augystudios.com/media/music/nggyu-piano-lt.mp3")
-			{
-				document.getElementById("textChange").innerHTML = "You're listening to: LittleTranscriber - Never Gonna Give You Up (Piano Version)";
-			}
+			
 		  </script>
 
 		<section class="hero is-fullheight">
@@ -113,6 +106,16 @@
 								<p id="textChange">
 									There's an Easter Egg somewhere...
 								</p>
+								<script>
+									if (randomSong == "https://cdn.augystudios.com/media/music/While-The-City-Sleeps.mp3")
+									{
+										document.getElementById("textChange").innerHTML = "You're listening to: Lee Pomeroy - While The City Sleeps";
+									}
+									else if (randomSong == "https://cdn.augystudios.com/media/music/nggyu-piano-lt.mp3")
+									{
+										document.getElementById("textChange").innerHTML = "You're listening to: LittleTranscriber - Never Gonna Give You Up (Piano Version)";
+									}
+								</script>
 							</small>
 							<br />
 						</div>
