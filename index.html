@@ -54,11 +54,6 @@
 	</head>
 	<body>
 		<script>
-			function playCSDL() {
-			  var audio = document.getElementById("audio");
-			  audio.play();
-			}
-
 			var listOfSongs = [
 				"https://cdn.augystudios.com/media/music/While-The-City-Sleeps.mp3",
 				"https://cdn.augystudios.com/media/music/nggyu-piano-lt.mp3"
@@ -66,7 +61,11 @@
 
 			var randomSong = listOfSongs[(Math.floor(Math.random() * (listOfSongs.length)))]
 
-			audio.src = randomSong;
+			function playCSDL() {
+			  var audio = document.getElementById("audio");
+			  audio.src = randomSong;
+			  audio.play();
+			}
 		  </script>
 
 		<section class="hero is-fullheight">
