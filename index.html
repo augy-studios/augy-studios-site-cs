@@ -55,7 +55,16 @@
 	<body>
 		<script>
 			function playCSDL() {
+
+				var listOfSongs = [
+					"https://cdn.augystudios.com/media/music/While-The-City-Sleeps.mp3",
+					"https://cdn.augystudios.com/media/music/nggyu-piano-lt.mp3"
+				];
+
+				var randomSong = listOfSongs[Math.floor(Math.random() * listOfSongs.length)];
+
 				var audio = document.getElementById("audio");
+				audio.src = randomSong;
 				audio.play();
 			}
 		</script>
@@ -96,15 +105,7 @@
 								</p>
 								<script>
 									document.getElementById("tmLink").addEventListener('click', function() {
-										var listOfSongs = [
-										"https://cdn.augystudios.com/media/music/While-The-City-Sleeps.mp3",
-										"https://cdn.augystudios.com/media/music/nggyu-piano-lt.mp3"
-									];
 
-									var randomSong = listOfSongs[Math.floor(Math.random() * listOfSongs.length)];
-
-									audio.src = randomSong;
-									
 									if (randomSong == "https://cdn.augystudios.com/media/music/While-The-City-Sleeps.mp3")
 									{
 										document.getElementById("textChange").innerHTML = "You're listening to: Lee Pomeroy - While The City Sleeps";
@@ -113,6 +114,7 @@
 									{
 										document.getElementById("textChange").innerHTML = "You're listening to: LittleTranscriber - Never Gonna Give You Up (Piano Version)";
 									}
+
 									}, false);
 								</script>
 							</small>
