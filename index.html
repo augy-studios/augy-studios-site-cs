@@ -53,9 +53,13 @@
 		
 	</head>
 	<body>
-		<!-- <script>
-			
-		</script> -->
+		<script>
+			function playCSDL() {
+				var audio = document.getElementById("audio");
+				audio.src = randomSong;
+				audio.play();
+			}
+		</script>
 
 		<section class="hero is-fullheight">
 			<div class="hero-body">
@@ -101,9 +105,7 @@
 									var randomSong = listOfSongs[Math.floor(Math.random() * listOfSongs.length)];
 
 									function playCSDL() {
-									var audio = document.getElementById("audio");
 									audio.src = randomSong;
-									audio.play();
 									}
 									if (randomSong == "https://cdn.augystudios.com/media/music/While-The-City-Sleeps.mp3")
 									{
