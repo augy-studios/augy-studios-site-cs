@@ -38,23 +38,9 @@
 			href="https://cdn.jsdelivr.net/npm/bulma-social@1/bin/bulma-social.min.css"
 		/>
 
-		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Chewy">
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-		<style>
-			body,h1 {font-family: "Chewy", sans-serif}
-			body, html {height: 100%}
-			.bgimg {
-			  background-image: url('https://cdn.augystudios.com/media/misc/forestbridge-bg.jpg');
-			  min-height: 100%;
-			  background-position: center;
-			  background-size: cover;
-			}
-			h1 {
-				text-align:center;
-			}
-			</style>
+		<script>
+			window.location = "https://augystudios.com/coming-soon"
+		</script>
 
 		<script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
 
@@ -72,83 +58,5 @@
 		
 	</head>
 	<body>
-		<script>
-			function playCSDL() {
-
-				var listOfSongs = [
-					"https://cdn.augystudios.com/media/music/While-The-City-Sleeps.mp3",
-					"https://cdn.augystudios.com/media/music/nggyu-piano-lt.mp3"
-				];
-
-				var randomSong = listOfSongs[Math.floor(Math.random() * listOfSongs.length)];
-
-				var audio = document.getElementById("audio");
-				audio.src = randomSong;
-				audio.play();
-			}
-		</script>
-
-		<div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
-			<div class="w3-display-topleft w3-padding-large w3-xlarge">
-				Augy Studios
-			</div>
-			<div class="w3-display-middle">
-				<h1 class="w3-jumbo w3-animate-top"><a id="tmLink" style="color:#99ff99" onclick="playCSDL()">COMING SOON</a></h1>
-				<audio id="audio"></audio>
-				<div class="container area-center">
-					<div class="buttons is-centered">
-						<a class="button is-medium is-twitter" href="https://twitter.com/augyteo" target="_blank">
-							<span class="icon">
-								<i class="fab fa-twitter fa-lg"></i>
-							</span>
-						</a>
-						<a class="button is-medium is-youtube" href="https://www.youtube.com/augyproductions" target="_blank">
-							<span class="icon">
-								<i class="fab fa-youtube fa-lg"></i>
-							</span>
-						</a>
-						<a class="button is-medium is-discord" href="https://discord.gg/H4YYsgkYSa" target="_blank">
-							<span class="icon">
-								<i class="fab fa-discord fa-lg"></i>
-							</span>
-						</a>
-						<a class="button is-medium is-twitch" href="https://twitch.tv/augywolfy" target="_blank">
-							<span class="icon">
-								<i class="fab fa-twitch fa-lg"></i>
-							</span>
-						</a>
-					</div>
-				</div>
-				<br />
-				<hr class="w3-border-grey" style="margin:auto;width:40%">
-				<br />
-				<p class="w3-large w3-center">We are working on it! Join our Discord server and <br /> enjoy your time while you wait for the website to be ready.
-				</p>
-				<br /><br />
-				<small>
-					<p id="textChange">
-						There's an Easter Egg somewhere...
-					</p>
-					<script>
-						document.getElementById("tmLink").addEventListener('click', function() {
-
-						if (randomSong == "https://cdn.augystudios.com/media/music/While-The-City-Sleeps.mp3")
-						{
-							document.getElementById("textChange").innerHTML = "You're listening to: Lee Pomeroy - While The City Sleeps";
-						}
-						else if (randomSong == "https://cdn.augystudios.com/media/music/nggyu-piano-lt.mp3")
-						{
-							document.getElementById("textChange").innerHTML = "You're listening to: LittleTranscriber - Never Gonna Give You Up (Piano Version)";
-						}
-
-						}, false);
-					</script>
-				</small>
-				<br />
-			</div>
-			<div class="w3-display-bottomleft w3-padding-large">
-				Made with <i class="fa fa-heart fa-fw heart"></i> by © Augy Studios 2022
-			</div>
-		</div>
 	</body>
 </html>
