@@ -119,6 +119,15 @@
             <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
             <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
             <a href="#" class="w3-bar-item w3-button">SEARCH</a>
+            <a onclick="darkmode()" class="w3-bar-item w3-button w3-hide-small">
+                <img src="https://cdn.augystudios.com/media/misc/darktheme-moon.png" width="20px" height="20px">
+            </a>
+            <script>
+                function darkmode() {
+                    var element = document.body;
+                    element.classList.toggle("dark-mode");
+                }
+            </script>
         </div>
     </div>
 
