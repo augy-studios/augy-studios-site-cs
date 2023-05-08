@@ -43,12 +43,28 @@
 		<style>
 			body,h1 {font-family: "Chewy", sans-serif}
 			body, html {height: 100%}
-			.bgimg {
+			/* .bgimg {
 			  background-image: url('https://cdn.augystudios.com/media/video/TheBeam.mp4');
 			  min-height: 100%;
 			  background-position: center;
 			  background-size: cover;
+			} */
+
+			/* For the background video */
+			.bg-video {
+				position: absolute;
+				right: 0;
+				bottom: 0;
+				z-index: -1;
 			}
+			@media (min-aspect-ratio: 16/9){
+				.bg-video{
+					width: auto;
+					height: 100%;
+				}
+			}
+
+
 			h1 {
 				text-align:center;
 			}
@@ -87,6 +103,10 @@
 				audio.play();
 			}
 		</script>
+
+		<video autoplay loop muted plays-inline class="bg-video">
+			<source src="https://cdn.augystudios.com/media/video/TheBeam.mp4" type="video/mp4">
+		</video>
 
 		<div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
 			<div class="w3-display-topleft w3-padding-large w3-xlarge">
