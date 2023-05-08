@@ -101,8 +101,6 @@
 		// plays music when clicked
 		function playCSDL() {
 
-			const input = prompt();
-
 			// list all the songs
 			var listOfSongs = [
 				"https://cdn.augystudios.com/media/music/nggyu-piano-lt.mp3",
@@ -123,18 +121,15 @@
 			audio.play();
 
 			// play the next track
-			if (input = "next")
+			var nextSong = document.getElementById("nextSong");
+			newSongValue = songValue++;
+			if (newSongValue > listOfSongs.length)
 			{
-				var nextSong = document.getElementById("nextSong");
-				newSongValue = songValue++;
-				if (newSongValue > listOfSongs.length)
-				{
-					newSongValue = 0;
-				}
-				newSong = listOfSongs[newSongValue];
-				audio.src = newSong;
-				audio.play();
+				newSongValue = 0;
 			}
+			newSong = listOfSongs[newSongValue];
+			audio.src = newSong;
+			audio.play();
 
 			// play the previous track
 			var prevSong = document.getElementById("prevSong");
