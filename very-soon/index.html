@@ -108,11 +108,20 @@
 				"https://cdn.augystudios.com/media/music/KarimMikaGabs-SuperficialLove.mp3"
 			];
 
-			var randomSong = listOfSongs[Math.floor(Math.random() * listOfSongs.length)];
+			var songValue = Math.floor(Math.random() * listOfSongs.length);
+			console.log(songValue)
+			var randomSong = listOfSongs[songValue];
 
 			var audio = document.getElementById("audio");
 			audio.src = randomSong;
 			audio.play();
+
+			var nextSong = document.getElementById("nextSong");
+			songValue = songValue++;
+			if (songValue > listOfSongs.length)
+			{
+				songValue = 0;
+			}
 		}
 	</script>
 
