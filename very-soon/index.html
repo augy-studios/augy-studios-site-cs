@@ -56,15 +56,15 @@
 			}
 
 		/* For the background video */
-		#bg-video {
-			position: absolute;
-			right: 0;
+		.bg-video {
+			position: fixed;
+			inset: 0;
 			bottom: 0;
-			min-width: 100%;
-			min-height: 100%;
+			width: 100%;
+			height: 100%;
 			z-index: -1;
+			object-fit: cover;
 		}
-
 		@media (min-aspect-ratio: 16/9) {
 			.bg-video {
 				width: auto;
@@ -115,22 +115,9 @@
 			audio.src = randomSong;
 			audio.play();
 		}
-
-		// for the background video
-		var bgvideo = document.getElementById("bg-video");
-
-		function bgVid() {
-			if (bgvideo.paused) {
-				bgvideo.play();
-			} else {
-				bgvideo.pause();
-			}
-		}
 	</script>
 
-	<video autoplay loop muted id="bg-video">
-		<source src="https://cdn.augystudios.com/media/video/TheBeam.mp4" type="video/mp4">
-	</video>
+	<video src="https://cdn.augystudios.com/media/video/TheBeam.mp4" type="video/mp4" preload="auto" autoplay loop muted class="bg-video"></video>
 
 	<div class="bg-video w3-display-container w3-animate-opacity w3-text-white">
 		<div class="w3-display-topleft w3-padding-large w3-xlarge">
