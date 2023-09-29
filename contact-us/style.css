@@ -176,8 +176,8 @@ body {
 }
 
 @media (max-width: 950px) {
-  body {
-    overflow: scroll;
+  html {
+    overflow: auto;
   }
 
   .container {
@@ -192,8 +192,8 @@ body {
 }
 
 @media (max-width: 820px) {
-  body {
-    overflow: scroll;
+  html {
+    overflow: auto;
   }
 
   .container {
