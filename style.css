@@ -61,8 +61,8 @@ body {
 }
 
 header {
+    font-family: "Comfortaa", sans-serif;
     margin: 50px auto;
-    max-width: 400px;
     text-align: center;
 }
 
@@ -131,6 +131,7 @@ h1 {
 }
 
 .box h2 {
+    font-family: "Comfortaa", sans-serif;
     margin: 0;
 }
 
