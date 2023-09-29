@@ -2,7 +2,7 @@
 <html>
 
 <head>
-	<!-- Google tag (gtag.js) -->
+    <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-FMCYFTFPEL"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -17,51 +17,91 @@
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9715826188316382"
         crossorigin="anonymous"></script>
 
-	<!-- Mastodon -->
-	<link rel="me" href="https://mastodon.social/@augywolfy"></link>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Augy Studios Home</title>
+    <meta name="description"
+        content="Augy Studios is an organisation that oversees Augy's social media and development projects.">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-	<meta charset="utf-8">
-	<meta http-equiv="x-ua-compatible" content="ie=edge">
-	<title>Augy Studios</title>
-	<meta name="description"
-		content="Augy Studios is an organisation that manages Augy's social media and development projects.">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="apple-touch-icon" href="https://cdn.augystudios.com/media/ten-year-series/new-studios.png">
+    <link rel="icon" href="favicon.ico">
+    <link rel="shortcut icon" href="favicon.ico">
 
-	<link rel="apple-touch-icon" href="https://cdn.augystudios.com/media/ten-year-series/new-studios.png">
-	<link rel="icon" href="favicon.ico">
-	<link rel="shortcut icon" href="favicon.ico">
-
-	<link href="https://fonts.googleapis.com/css?family=Passion+One|Ubuntu" rel="stylesheet">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <script defer src="https://use.fontawesome.com/releases/v6.4.2/js/all.js"></script>
 
-	<meta name="theme-color" content="#99FF99">
-	<meta name="twitter:card" content="summary_large_image">
-	<meta name="twitter:image:src" content="https://cdn.augystudios.com/media/ten-year-series/new-studios.png">
+    <meta name="theme-color" content="#99FF99">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:image:src" content="https://cdn.augystudios.com/media/ten-year-series/new-studios.png">
 
-	<meta property="og:type" content="website">
-	<meta property="og:title" content="Augy Studios" />
-	<meta property="og:site_name" content="Augy Studios" />
-	<meta property="og:url" content="https://augystudios.com/" />
-	<meta property="og:description"
-		content="An organisation that manages Augy's social media and development projects." />
-	<meta property="og:image" content="https://cdn.augystudios.com/media/ten-year-series/new-studios.png" />
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Augy Studios Home" />
+    <meta property="og:site_name" content="Augy Studios" />
+    <meta property="og:url" content="https://augystudios.com/" />
+    <meta property="og:image" content="https://cdn.augystudios.com/media/ten-year-series/new-studios.png" />
 
-	<link href="https://fonts.googleapis.com/css?family=Tajawal" rel="stylesheet" />
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css"
-		integrity="sha256-D9M5yrVDqFlla7nlELDaYZIpXfFWDytQtiV+TaH6F1I=" crossorigin="anonymous" />
-	<link rel="stylesheet" type="text/css" href="css/styles.css" />
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-social@1/bin/bulma-social.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css"
+        integrity="sha256-D9M5yrVDqFlla7nlELDaYZIpXfFWDytQtiV+TaH6F1I=" crossorigin="anonymous" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-social@1/bin/bulma-social.min.css" />
 
-	<script>
-		window.location = "https://augystudios.com/coming-soon"
-	</script>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Chewy">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-	<script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+    <!-- Play Never Gonne Give You Up Piano Version -->
+    <script>
+        function playNggyu() {
+            var audio = document.getElementById("audio");
+            audio.play();
+        }
+    </script>
 
+    <!-- Copy to clipboard (dynamic) -->
+    <script>
+        function copyText(text) {
+            navigator.clipboard.writeText(text).then(() => {
+                console.log('Successfully copied text to clipboard:', text)
+            }).catch(err => {
+                console.error('Error while copying text to clipboard:', err);
+            });
+        }
+    </script>
 </head>
 
 <body>
+    <header>
+        <h1>Welcome to Augy Studios!</h1>
+    </header>
+
+    <div class="container">
+        <div class="box box-red box-push" id="socialsBtn">
+            <h2 class="box-red">Socials</h2>
+            <p>Social links page that is basically a Linktree replica, but better.</p>
+            <i class="fa-solid fa-link"></i>
+        </div>
+
+        <div class="box box-yellow" id="docsBtn">
+            <h2 class="box-yellow">API Documentations</h2>
+            <p>Documentation for APIs created under Augy Studios, such as the MRT Doors API. More APIs will be created in the future.</p>
+            <i class="fa-brands fa-dev"></i>
+        </div>
+
+        <div class="box box-green box-push" id="expBtn">
+            <h2 class="box-green">Experiments</h2>
+            <p>The one-stop site for all experiment features that might be added in the future. This includes some features of AugyBot.</p>
+            <i class="fa-solid fa-flask"></i>
+        </div>
+
+        <div class="box box-blue" id="contactBtn">
+            <h2 class="box-blue">Contact Us</h2>
+            <p>Contact us via our socials, or send us a message directly!</p>
+            <i class="fa-solid fa-phone"></i>
+        </div>
+    </div>
+
+    <script src="script.js" defer></script>
 </body>
 
 </html>

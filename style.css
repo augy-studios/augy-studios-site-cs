@@ -1,0 +1,141 @@
+/* Google Font Link */
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@200;300;400;500;600;700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Comfortaa", sans-serif;
+
+    /* Chrome and Opera */
+    user-select: none;
+
+    /* Safari */
+    -webkit-user-select: none;
+
+    /* Konqueror HTML */
+    -khtml-user-select: none;
+
+    /* Firefox */
+    -moz-user-select: none;
+
+    /* Internet Explorer/Edge */
+    -ms-user-select: none;
+}
+
+::selection {
+    color: #fff;
+    background: #6f6;
+}
+
+body {
+    background: #6f6;
+    background-image: url('/media/BG2.png');
+    min-height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+header {
+    margin: 50px auto;
+    max-width: 400px;
+    text-align: center;
+}
+
+h1 {
+    font-weight: 600;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 1140px;
+}
+
+.box {
+    cursor: pointer;
+    background-color: #fff;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05), 0 6px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    padding: 30px;
+    position: relative;
+    overflow: hidden;
+    margin: 15px;
+    width: 350px;
+}
+
+.box::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 10px;
+    width: 100%;
+}
+
+.box-red::after {
+    background-color: #fc0200;
+}
+
+.box-yellow::after {
+    background-color: #fddc01;
+}
+
+.box-green::after {
+    background-color: #17ad1b;
+}
+
+.box-blue::after {
+    background-color: #0091fe;
+}
+
+.box-push {
+    transform: translateY(50%);
+}
+
+.box h2 {
+    margin: 0;
+}
+
+.box:hover h2.box-red {
+    color: #fc0200;
+}
+
+.box:hover h2.box-yellow {
+    color: #fddc01;
+}
+
+.box:hover h2.box-green {
+    color: #17ad1b;
+}
+
+.box:hover h2.box-blue {
+    color: #0091fe;
+}
+
+.box p {
+    font-size: 14px;
+    margin: 15px 0 10px;
+}
+
+.box:hover p {
+    color: rgb(88, 87, 87);
+}
+
+.box i {
+    display: block;
+    margin-left: auto;
+}
+
+.box:hover i {
+    transform: scale(1.1);
+}
+
+@media (max-width: 775px) {
+    .box-push {
+        transform: translateY(0);
+    }
+}
