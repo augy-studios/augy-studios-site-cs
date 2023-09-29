@@ -38,7 +38,7 @@ body {
 }
 
 .bg-image {
-  background-image: url('https://cdn.augystudios.com/media/misc/forestbridge-bg.jpg');
+  background-image: url("https://cdn.augystudios.com/media/misc/forestbridge-bg.jpg");
   filter: blur(5px);
   -webkit-filter: blur(5px);
   min-height: 100%;
