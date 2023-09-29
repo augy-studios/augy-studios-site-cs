@@ -60,11 +60,12 @@ body {
 
 .bg-image {
     background: url("media/BG2.png") repeat;
+    background-repeat: repeat;
     filter: blur(5px);
     -webkit-filter: blur(5px);
     overflow: hidden;
-    height: 3198px;
-    width: 5961px;
+    height: 100%;
+    width: 100%;
     animation: slide 30s linear infinite;
 }
 
