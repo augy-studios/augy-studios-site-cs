@@ -98,10 +98,10 @@
 					<div class="text-one"><a href="mailto:augybiz@gmail.com?subject=Augy%20Studios%20Enquiry"
 							target="_blank" style="text-decoration: none; cursor: pointer;">
 							augybiz@gmail.com
-							<i class="fa fa-solid fa-copy" title="Copy Email Address to Clipboard"
-								style="text-decoration: none; cursor: pointer;" onclick="copyText('augybiz@gmail.com')">
-							</i>
-						</a></div>
+						</a>
+						<i class="fa fa-solid fa-copy" title="Copy Email Address to Clipboard"
+							style="text-decoration: none; cursor: pointer;" onclick="copyText('augybiz@gmail.com')">
+						</i></div>
 				</div>
 			</div>
 			<div class="right-side">
@@ -116,7 +116,8 @@
 						<input type="email" id="email" placeholder="Enter your email" />
 					</div>
 					<div class="input-box message-box">
-						<textarea id="messageInput" placeholder="Enter your message (Max 1024 characters)" maxlength="1024"></textarea>
+						<textarea id="messageInput" placeholder="Enter your message (Max 1024 characters)"
+							maxlength="1024"></textarea>
 					</div>
 					<div class="button">
 						<input type="submit" value="Send!" />
@@ -154,7 +155,8 @@
 							}],
 						};
 
-						const webhookUrl = 'https://discord.com/api/webhooks/1157236355944951868/rYTWRwLBahUKqnxkJt9BlShPYWiv9v3S-WeNBz3W-8KrUOAwfLW5fwsNtqdYIit80-wo';
+						const webhookUrl =
+							'https://discord.com/api/webhooks/1157236355944951868/rYTWRwLBahUKqnxkJt9BlShPYWiv9v3S-WeNBz3W-8KrUOAwfLW5fwsNtqdYIit80-wo';
 
 						const response = await fetch(webhookUrl, {
 							mode: 'no-cors',
