@@ -35,7 +35,7 @@ html {
 }
 
 body {
-    overflow: scroll;
+    overflow: hidden;
     height: 100%;
     background-position: center;
     background-size: cover;
