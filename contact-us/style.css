@@ -172,6 +172,10 @@ body {
 }
 
 @media (max-width: 950px) {
+  body {
+    overflow: hidden;
+  }
+
   .container {
     width: 90%;
     padding: 30px 40px 40px 35px;
@@ -184,6 +188,10 @@ body {
 }
 
 @media (max-width: 820px) {
+  body {
+    overflow: hidden;
+  }
+
   .container {
     margin: 40px 0;
     height: 100%;
