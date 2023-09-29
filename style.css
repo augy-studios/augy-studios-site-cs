@@ -69,12 +69,12 @@ h1 {
 }
 
 .box:hover {
-    background-color: #000;
+    background-color: #9f9;
 }
 
 .box:hover p,
 .box:hover i {
-    color: #fff;
+    color: #000;
 }
 
 .box::after {
