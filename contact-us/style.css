@@ -28,6 +28,10 @@
   background: #6f6;
 }
 
+html {
+  overflow: hidden;
+}
+
 body {
   min-height: 100vh;
   width: 100%;
@@ -47,7 +51,6 @@ body {
   width: 100%;
   height: 100%;
   position: absolute;
-  overflow: hidden;
 }
 
 .container {
@@ -173,6 +176,10 @@ body {
 }
 
 @media (max-width: 950px) {
+  html {
+    overflow: scroll;
+  }
+
   body {
     overflow: hidden;
   }
