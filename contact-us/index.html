@@ -79,17 +79,17 @@
 					<i class="fa-solid fa-share-from-square"></i>
 					<div class="topic">Socials</div>
 					<div class="text-one"><a href="https://x.com/augyteo" target="_blank"
-							style="text-decoration: none; cursor: pointer;"><i
-								class="fa-brands fa-x-twitter"></i> Twitter</a></div>
+							style="text-decoration: none; cursor: pointer;"><i class="fa-brands fa-x-twitter"></i>
+							Twitter</a></div>
 					<div class="text-two"><a href="https://www.youtube.com/augyproductions" target="_blank"
-							style="text-decoration: none; cursor: pointer;"><i
-								class="fa-brands fa-youtube"></i> YouTube</a></div>
+							style="text-decoration: none; cursor: pointer;"><i class="fa-brands fa-youtube"></i>
+							YouTube</a></div>
 					<div class="text-three"><a href="https://discord.gg/H4YYsgkYSa" target="_blank"
-							style="text-decoration: none; cursor: pointer;"><i
-								class="fa-brands fa-discord"></i> Discord</a></div>
+							style="text-decoration: none; cursor: pointer;"><i class="fa-brands fa-discord"></i>
+							Discord</a></div>
 					<div class="text-four"><a href="https://twitch.tv/augywolfy" target="_blank"
-							style="text-decoration: none; cursor: pointer;"><i
-								class="fa-brands fa-twitch"></i> Twitch</a></div>
+							style="text-decoration: none; cursor: pointer;"><i class="fa-brands fa-twitch"></i>
+							Twitch</a></div>
 				</div>
 				<div class="email details">
 					<i class="fa-solid fa-envelope"></i>
@@ -107,72 +107,9 @@
 				<div class="topic-text">Send us a message!</div>
 				<p>If you don't have any of the listed social media, feel free to send us a message and we'll get back
 					to you as soon as we can!</p>
-				<form onsubmit="sendContact(event)">
-					<div class="input-box">
-						<input type="text" id="name" placeholder="Enter your name" required>
-					</div>
-					<div class="input-box">
-						<input type="email" id="email" placeholder="Enter your email" required/>
-					</div>
-					<div class="input-box message-box">
-						<textarea id="messageInput" placeholder="Enter your message (Max 1024 characters)"
-							maxlength="1024" required></textarea>
-					</div>
-					<div class="button">
-						<input type="submit" value="Send!" />
-					</div>
-				</form>
-				<script>
-					async function sendContact(ev) {
-						ev.preventDefault();
-
-						const senderName = document
-							.getElementById('name').value;
-						const senderEmail = document
-							.getElementById('email').value;
-						const senderMessage = document
-							.getElementById('messageInput').value;
-
-						const webhookBody = {
-							embeds: [{
-								type: "rich",
-								color: 6750054,
-								title: 'Contact Form Submitted',
-								fields: [{
-										name: 'Name',
-										value: senderName
-									},
-									{
-										name: 'Email',
-										value: senderEmail
-									},
-									{
-										name: 'Message',
-										value: senderMessage
-									}
-								]
-							}],
-						};
-
-						const webhookUrl =
-							'https://canary.discord.com/api/webhooks/1157236355944951868/rYTWRwLBahUKqnxkJt9BlShPYWiv9v3S-WeNBz3W-8KrUOAwfLW5fwsNtqdYIit80-wo';
-
-						const response = await fetch(webhookUrl, {
-							mode: 'no-cors',
-							method: 'POST',
-							headers: {
-								'Content-Type': 'application/json',
-							},
-							body: JSON.stringify(webhookBody),
-						});
-
-						if (response.ok) {
-							alert('I have received your message!');
-						} else {
-							alert('There was an error! Try again later!');
-						}
-					}
-				</script>
+				<p>Click <a href="https://forms.gle/H4JWDt6V9UwwCmua7" target="_blank"
+						style="text-decoration: none; cursor: pointer;">here</a> to head over to the Google Form to fill
+					in the Contact Form!</p>
 			</div>
 		</div>
 		<footer onclick="playNggyu()" style="color: black; text-align: center; font-size: small;">
