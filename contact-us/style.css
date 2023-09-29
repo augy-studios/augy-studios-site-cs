@@ -176,10 +176,6 @@ body {
 }
 
 @media (max-width: 950px) {
-  html {
-    overflow: scroll;
-  }
-
   body {
     overflow: hidden;
   }
