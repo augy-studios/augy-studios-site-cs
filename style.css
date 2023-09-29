@@ -65,6 +65,15 @@ h1 {
     overflow: hidden;
     margin: 15px;
     width: 350px;
+    transition: 3s;
+}
+
+.box:hover {
+    background-color: #000;
+}
+
+.box:hover p {
+    color: #fff;
 }
 
 .box::after {
