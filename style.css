@@ -174,16 +174,23 @@ h1 {
 }
 
 @media(max-width:775px) {
+    html {
+        overflow: scroll;
+    }
     body {
         overflow: scroll;
     }
     .box-push {
         transform: translateY(0);
     }
+    .bg-container {
+        overflow: scroll;
+    }
     .bg-image {
         height: 100%;
         width: 100%;
         animation: none;
+        overflow: scroll;
     }
 }
 
