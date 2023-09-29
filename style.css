@@ -55,7 +55,7 @@ body {
     overflow: hidden;
     height: 3198px; /* 3* height */
     width: 5961px; /* 3* width */
-    animation: slide 10s linear infinite;
+    animation: slide 30s linear infinite;
 }
 
 header {
