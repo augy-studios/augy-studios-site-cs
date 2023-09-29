@@ -183,7 +183,7 @@ h1 {
     .bg-image {
         height: 100%;
         width: 100%;
-        animation: none;
+        animation: slide 30s linear paused;
     }
 }
 
