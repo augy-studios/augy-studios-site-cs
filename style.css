@@ -81,7 +81,7 @@ h1 {
 }
 
 .container {
-    overflow: scroll;
+    overflow: hidden;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
