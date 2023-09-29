@@ -41,6 +41,10 @@ body {
     background-size: cover;
 }
 
+#body * {
+    font-family: "Comfortaa", sans-serif;
+}
+
 .headerText {
     font-family: "Comfortaa", sans-serif;
 }
