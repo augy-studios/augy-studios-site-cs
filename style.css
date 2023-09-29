@@ -41,6 +41,10 @@ body {
     background-size: cover;
 }
 
+.headerText {
+    font-family: "Comfortaa", sans-serif;
+}
+
 .bg-container {
     overflow: hidden;
     position: absolute;
