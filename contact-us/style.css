@@ -39,12 +39,14 @@ body {
 
 .bg-image {
   background-image: url("https://cdn.augystudios.com/media/misc/forestbridge-bg.jpg");
-  filter: blur(5px);
-  -webkit-filter: blur(5px);
-  min-height: 100%;
+  filter:blur(5px);
+  -webkit-filter:blur(5px);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  width: 100%;
+  height: 100%;
+  position: absolute;
 }
 
 .container {
