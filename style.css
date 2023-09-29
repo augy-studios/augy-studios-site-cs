@@ -72,7 +72,8 @@ h1 {
     background-color: #000;
 }
 
-.box:hover p {
+.box:hover p,
+.box:hover i {
     color: #fff;
 }
 
