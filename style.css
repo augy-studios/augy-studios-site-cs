@@ -35,7 +35,7 @@ html {
 }
 
 body {
-    overflow: scroll;
+    overflow: hidden;
     height: 100%;
     background-position: center;
     background-size: cover;
@@ -50,7 +50,7 @@ body {
 }
 
 .bg-container {
-    overflow: hidden;
+    overflow: scroll;
     position: absolute;
     left: 0;
     top: 0;
