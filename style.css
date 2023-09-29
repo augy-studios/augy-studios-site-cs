@@ -65,7 +65,7 @@ h1 {
     overflow: hidden;
     margin: 15px;
     width: 350px;
-    transition: 3s;
+    transition: 0.5s;
 }
 
 .box:hover {
