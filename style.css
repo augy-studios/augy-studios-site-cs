@@ -97,7 +97,7 @@ h1 {
 }
 
 .box:hover p,
-.box:hover i {
+.box:hover img {
     color: #000;
 }
 
@@ -156,12 +156,12 @@ h1 {
     margin: 15px 0 10px;
 }
 
-.box i {
+.box img {
     display: block;
     margin-left: auto;
 }
 
-.box:hover i {
+.box:hover img {
     transform: scale(1.1);
 }
 
