@@ -213,7 +213,7 @@ h1 {
         transition: 0.3s;
     }
 
-    .outside-container {
+    .outside-container, .body {
         overflow: scroll;
     }
 
