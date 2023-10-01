@@ -185,17 +185,8 @@ h1 {
 }
 
 @media(max-width:1139.2px) {
-    body {
-        background: #9f9;
-        overflow: scroll;
-    }
     .box-push {
         transform: translateY(0);
-    }
-    .bg-image {
-        height: 100%;
-        width: 100%;
-        animation: slide 30s linear paused;
     }
 }
 
