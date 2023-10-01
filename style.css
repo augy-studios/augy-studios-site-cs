@@ -212,9 +212,9 @@ h1 {
         overflow: scroll;
     }
 
-    .bg-container {
-        height: auto;
-        width: 773.6px;
+    .outside-container {
+        height: 100dvh;
+        width: 100vw;
     }
 
     .box-push {
