@@ -208,13 +208,18 @@ h1 {
 }
 
 @media(max-width:773.6px) {
+    body {
+        overflow: scroll;
+    }
+
+    .bg-image {
+        height: 100%;
+        width: 100%;
+    }
+
     .box-push {
         transform: translateY(0);
         transition: 0.3s;
-    }
-
-    body {
-        overflow: scroll;
     }
 
     .big-footer {
