@@ -214,6 +214,11 @@ h1 {
         width: 100vw;
     }
 
+    .outside-container {
+        height: 100dvh;
+        width: 100vw;
+    }
+
     .box-push {
         transform: translateY(0);
         transition: 0.3s;
