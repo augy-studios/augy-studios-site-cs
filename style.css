@@ -187,7 +187,7 @@ h1 {
 @media(max-width:1139.2px) {
     .box-push {
         transform: translateY(0);
-        transition: 1.5s;
+        transition: 0.3s;
     }
 }
 
@@ -198,7 +198,7 @@ h1 {
     }
     .box-push {
         transform: translateY(0);
-        transition: 1.5s;
+        transition: 0.3s;
     }
     .bg-image {
         height: 100%;
