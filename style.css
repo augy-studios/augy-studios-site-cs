@@ -219,8 +219,8 @@ h1 {
         background: none;
     }
 
-    .outside-container {
-        overflow: scroll;
+    .bg-container {
+        display: none;
     }
 
     .box-push {
