@@ -210,13 +210,17 @@ h1 {
 @media(max-width:773.6px) {
     body {
         overflow: scroll;
+        background: #9f9;
         height: 100dvh;
         width: 100vw;
     }
 
+    .bg-image {
+        background: none;
+    }
+
     .outside-container {
-        height: 150dvh;
-        width: 100vw;
+        overflow: scroll;
     }
 
     .box-push {
