@@ -212,9 +212,9 @@ h1 {
         overflow: scroll;
     }
 
-    .bg-image {
-        height: auto;
-        width: auto;
+    .bg-container {
+        height: 100%;
+        width: 100%;
     }
 
     .box-push {
