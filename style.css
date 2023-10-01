@@ -210,9 +210,6 @@ h1 {
 @media(max-width:773.6px) {
     body {
         overflow: scroll;
-    }
-
-    .outside-container {
         height: 100dvh;
         width: 100vw;
     }
