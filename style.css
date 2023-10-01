@@ -213,8 +213,8 @@ h1 {
     }
 
     .bg-container {
-        height: 100%;
-        width: 100%;
+        height: auto;
+        width: auto;
     }
 
     .box-push {
