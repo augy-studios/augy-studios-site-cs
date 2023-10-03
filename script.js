@@ -1,5 +1,5 @@
 document.getElementById("socialsBtn").addEventListener("click", function() {
-    const link = "https://links.augystudios.com/main";
+    const link = "https://links.augystudios.com/";
     const newWindow = window.open(link, "_blank");
     if (!newWindow) {
         window.location.href = link;
