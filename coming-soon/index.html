@@ -170,10 +170,21 @@
 			</small>
 			<br />
 		</div>
+		<script>
+			// Get the current year
+			let currentDate = new Date();
+			let currentYear = currentDate.getFullYear();
+
+			// Find the element with the id "currentYear"
+			let currentYearElement = document.getElementById("currentYear");
+
+			// Update the content of the element with the current year
+			currentYearElement.textContent = currentYear;
+		</script>
 		<div class="w3-display-bottomleft w3-padding-large">
 			Made with <i class="fa fa-heart fa-fw heart"></i> in <a href="https://www.google.com/maps/place/Singapore"
-				target="_blank" style="text-decoration: none">Singapore</a> by © Augy Studios 2013-2023 All Rights
-			Sniffed uwu
+				target="_blank" style="text-decoration: none">Singapore</a> by &copy; Augy Studios 2013-<span
+				id="currentYear"></span> All Rights Sniffed uwu
 		</div>
 	</div>
 </body>
