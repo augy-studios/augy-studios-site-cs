@@ -23,19 +23,6 @@
     -ms-user-select: none;
 }
 
-::selection {
-    color: #fff;
-    background: #6f6;
-}
-
-:link {
-    color: #6f6;
-}
-
-:visited {
-    color: #66f;
-}
-
 html {
     scroll-behavior: smooth;
 }
