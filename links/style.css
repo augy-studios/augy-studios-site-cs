@@ -2,7 +2,38 @@
 @import url("https://fonts.googleapis.com/css2?family=Chewy:wght@200;300;400;500;600;700&display=swap");
 
 * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
     font-family: "Chewy", sans-serif;
+
+    /* Chrome and Opera */
+    user-select: none;
+
+    /* Safari */
+    -webkit-user-select: none;
+
+    /* Konqueror HTML */
+    -khtml-user-select: none;
+
+    /* Firefox */
+    -moz-user-select: none;
+
+    /* Internet Explorer/Edge */
+    -ms-user-select: none;
+}
+
+::selection {
+    color: #fff;
+    background: #6f6;
+}
+
+:link {
+    color: #6f6;
+}
+
+:visited {
+    color: #66f;
 }
 
 html {
@@ -38,7 +69,17 @@ html {
     }
 }
 
-
 h1 {
     text-align: center;
+}
+
+.links-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.links-div a {
+    width: 80%;
 }

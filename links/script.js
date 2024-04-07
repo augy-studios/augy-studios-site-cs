@@ -18,12 +18,11 @@ function playCSDL() {
     audio.play();
 }
 
-// Get the current year
+// Get the current year for the copyright footer text
 let currentDate = new Date();
 let currentYear = currentDate.getFullYear();
-
-// Find the element with the id "currentYear"
 let currentYearElement = document.getElementById("currentYear");
-
-// Update the content of the element with the current year
 currentYearElement.textContent = currentYear;
+
+// Update the element with the id "textChange" based on query
+let textChange = document.getElementById("textChange");
