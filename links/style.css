@@ -52,8 +52,15 @@ html {
     background-size: cover;
 }
 
-h1 {
+h2,
+form.pn-container,
+table,
+th,
+img.sticker-img,
+a.w3-button {
+    justify-content: center;
     text-align: center;
+    align-items: center;
 }
 
 h4#link-title {
@@ -93,39 +100,6 @@ h4#link-title {
     .sticker-div {
         max-width: 540px;
     }
-}
-
-#backToTop {
-    display: none;
-    position: fixed;
-    bottom: 20px;
-    right: 30px;
-    z-index: 99;
-    border: none;
-    outline: none;
-    background-color: lime;
-    color: black;
-    cursor: pointer;
-    border-radius: 50%;
-    text-align: center;
-    font-size: 16px;
-    height: 50px;
-    width: 50px;
-    align-content: center;
-}
-
-#backToTop:hover {
-    background-color: white;
-    color: lime;
-}
-
-form.pn-container,
-table,
-img.sticker-img,
-a.w3-button {
-    justify-content: center;
-    text-align: center;
-    align-items: center;
 }
 
 .pronouns {
