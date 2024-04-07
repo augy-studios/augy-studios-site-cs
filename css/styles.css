@@ -9,10 +9,8 @@ html {
   overflow: auto !important;
   background-image: url('../media/background.jpg'),
     linear-gradient(180deg,
-      rgba(211, 214, 223, 1) 0%,
-      rgba(206, 208, 220, 1) 38%,
-      rgba(179, 183, 201, 1) 67%,
-      rgba(123, 132, 175, 1) 100%);
+      #9f9 0%,
+      #99f 100%);
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
