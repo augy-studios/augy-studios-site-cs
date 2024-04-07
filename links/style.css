@@ -136,7 +136,8 @@ h4#link-title {
     color: lime;
 }
 
-form.pn-container {
+form.pn-container,
+table {
     justify-content: center;
     text-align: center;
     align-items: center;
