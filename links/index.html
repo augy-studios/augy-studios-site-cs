@@ -67,8 +67,11 @@
 				Studios</a>
 		</div>
 		<div class="w3-display-middle">
-			<h1 class="w3-jumbo w3-animate-top"><a style="color:#99ff99" onclick="playCSDL()">Welcome!</a></h1>
+			<h1 class="w3-jumbo w3-animate-top"><a style="color:#99ff99" onclick="playCSDL()">Heya, I'm Augy.</a></h1>
 			<audio id="audio"></audio>
+			<form action="https://en.pronouns.page/@augywolfy" target="_blank">
+                <button class="pronouns">he/they</button>
+            </form>
 			<div class="container area-center">
 				<div class="buttons is-centered">
 					<a class="button is-medium is-twitter" href="https://twitter.com/augyteo" target="_blank">
@@ -95,30 +98,32 @@
 				</div>
 			</div>
 			<br>
-			<h4 class="margin-top-2" style="text-align: center;">Telegram Sticker Packs</h4>
-			<div class="links-div">
-				<table style="margin-left: auto; margin-right: auto; width:100%; font-weight: 200;">
-					<tr>
-						<th>
-							<a href="https://t.me/addstickers/Augy1"
-								class="w3-button w3-round-xlarge w3-theme-l1 w3-border link" target="_blank">
-								Augy's Sticker<br>Pack 1
-							</a>
-						</th>
-						<th>
-							<a href="https://t.me/addstickers/AugyAnimS1"
-								class="w3-button w3-round-xlarge w3-theme-l1 w3-border link" target="_blank">
-								Augy's Animated<br>Sticker Pack
-							</a>
-						</th>
-					</tr>
-				</table>
-				<br>
+			<div class="sticker-div">
+				<h4 class="margin-top-2" id="link-title" style="text-align: center;">Telegram Sticker Packs</h4>
+				<div class="links-div">
+					<table style="margin-left: auto; margin-right: auto; width:100%; font-weight: 200;">
+						<tr>
+							<th>
+								<a href="https://t.me/addstickers/Augy1"
+									class="w3-button w3-round-xlarge w3-theme-l1 w3-border link" target="_blank">
+									Augy's Sticker<br>Pack 1
+								</a>
+							</th>
+							<th>
+								<a href="https://t.me/addstickers/AugyAnimS1"
+									class="w3-button w3-round-xlarge w3-theme-l1 w3-border link" target="_blank">
+									Augy's Animated<br>Sticker Pack
+								</a>
+							</th>
+						</tr>
+					</table>
+					<br>
+				</div>
 			</div>
 			<br>
 			<hr class="w3-border-grey" style="margin:auto;width:40%">
 			<br>
-			<p class="w3-large w3-center">Heya, you have found Augy's links page! <br>
+			<p class="w3-large w3-center">Welcome, you have found Augy's links page! <br>
 				Check out the social links above!
 			</p>
 			<br><br>
@@ -130,13 +135,19 @@
 			<br />
 		</div>
 		<div class="w3-display-bottomleft w3-padding-large">
-			Made with <i class="fa fa-heart fa-fw heart"></i> in <a class="other-links" href="https://www.google.com/maps/place/Singapore"
-				target="_blank" style="text-decoration: none">Singapore</a> by &copy; Augy Studios 2013-<span
-				id="currentYear"></span> All Rights Sniffed uwu •
-			<a class="other-links" href="https://forms.gle/4wKTdjgiC6MGX1aN8" target="_blank" style="text-decoration: none">Report an
+			Made with <i class="fa fa-heart fa-fw heart"></i> in <a class="other-links"
+				href="https://www.google.com/maps/place/Singapore" target="_blank"
+				style="text-decoration: none">Singapore</a> by &copy; Augy Studios 2013-<span id="currentYear"></span>
+			All Rights Sniffed uwu •
+			<a class="other-links" href="https://forms.gle/4wKTdjgiC6MGX1aN8" target="_blank"
+				style="text-decoration: none">Report an
 				issue</a>
 		</div>
 	</div>
+
+	<button onclick="topFunction()" id="backToTop" title="Scroll back to the top">
+        <img src="/media/up-icon.svg" alt="Up Icon SVG" width="25px">
+    </button>
 
 	<script src="/links/script.js"></script>
 </body>
