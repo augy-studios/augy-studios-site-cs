@@ -136,6 +136,12 @@ h4#link-title {
     color: lime;
 }
 
+form.pn-container {
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
 .pronouns {
     font-family: "Comfortaa", sans-serif;
     font-size: 10px;
