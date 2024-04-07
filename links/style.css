@@ -50,6 +50,7 @@ html {
     min-height: 100%;
     background-position: center;
     background-size: cover;
+    z-index: -2;
 }
 
 /* For the background video */
