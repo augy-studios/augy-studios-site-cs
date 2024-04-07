@@ -140,7 +140,7 @@ h4#link-title {
 form.pn-container,
 table,
 img.sticker-img,
-th {
+a.w3-button {
     justify-content: center;
     text-align: center;
     align-items: center;
