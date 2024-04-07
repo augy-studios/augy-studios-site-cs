@@ -23,6 +23,19 @@
     -ms-user-select: none;
 }
 
+::selection {
+    color: #fff;
+    background: #6f6;
+}
+
+a:link {
+    color: #6f6;
+}
+
+a:visited {
+    color: #66f;
+}
+
 html {
     scroll-behavior: smooth;
 }
