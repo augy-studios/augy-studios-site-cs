@@ -43,7 +43,6 @@ html {
 body,
 html {
     height: 100%;
-    z-index: 1;
 }
 
 .bgimg {
@@ -51,7 +50,7 @@ html {
     min-height: 100%;
     background-position: center;
     background-size: cover;
-    z-index: -1;
+    /* z-index: -1; */
 }
 
 /* For the background video */
@@ -61,15 +60,15 @@ html {
     bottom: 0;
     min-width: 100%;
     min-height: 100%;
-    z-index: 0;
+    z-index: -1;
 }
 
-/* @media (min-aspect-ratio: 16/9) {
+@media (min-aspect-ratio: 16/9) {
     .bg-video {
         width: auto;
         height: 100%;
     }
-} */
+}
 
 h1 {
     text-align: center;
