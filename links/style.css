@@ -28,11 +28,11 @@
     background: #6f6;
 }
 
-a:link {
+a.other-links:link {
     color: #6f6;
 }
 
-a:visited {
+a.other-links:visited {
     color: #66f;
 }
 
