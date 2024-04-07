@@ -6,8 +6,8 @@ body {
 }
 
 html {
-  overflow-y: auto !important;
-  background-image: url('https://cdn.augystudios.com/media/videos/TheBeam.mp4'),
+  overflow: auto !important;
+  background-image: url('../media/background.jpg'),
     linear-gradient(180deg,
       rgba(211, 214, 223, 1) 0%,
       rgba(206, 208, 220, 1) 38%,
