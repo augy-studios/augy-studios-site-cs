@@ -6,7 +6,7 @@ body {
 }
 
 html {
-  overflow: auto !important;
+  overflow-y: none !important;
   background-image: url('../media/background.jpg'),
     linear-gradient(180deg,
       #9f9 0%,
