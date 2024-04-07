@@ -137,7 +137,8 @@ h4#link-title {
 }
 
 form.pn-container,
-table {
+table,
+img.sticker-img {
     justify-content: center;
     text-align: center;
     align-items: center;
