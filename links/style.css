@@ -50,17 +50,27 @@ html {
     min-height: 100%;
     background-position: center;
     background-size: cover;
-    z-index: -1;
+    /* z-index: -1; */
 }
 
 /* For the background video */
 .bg-video {
-    position: fixed;
+    /* position: fixed;
     right: 0;
     bottom: 0;
     min-width: 100%;
-    min-height: 100%;
-    /* z-index: -1; */
+    min-height: 100%; */
+    opacity: 1;
+    visibility: visible;
+    width: 131.804%;
+    height: 100%;
+    max-height: none;
+    max-width: none;
+    position: absolute;
+    left: -15.9019%;
+    top: 0px;
+    display: block;
+    z-index: 1;
 }
 
 @media (min-aspect-ratio: 16/9) {
