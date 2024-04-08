@@ -93,16 +93,6 @@ h4#link-title {
     color: #9ff;
 }
 
-br.line-break {
-    display: none;
-}
-
-@media (min-width: 775px) {
-    br.line-break {
-        display: block;
-    }
-}
-
 @media (min-width: 576px) {
     .sticker-div {
         max-width: 540px;
