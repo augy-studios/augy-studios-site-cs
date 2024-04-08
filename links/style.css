@@ -62,7 +62,8 @@ a.w3-button {
 }
 
 img.sticker-img {
-    padding: 0.5em;
+    padding-right: 0.5em;
+    padding-left: 0.5em;
 }
 
 h4#link-title {
