@@ -39,6 +39,7 @@ a.other-links:visited {
 body,
 html {
     height: 100%;
+    overflow: hidden;
 }
 
 .bgimg {
@@ -46,7 +47,6 @@ html {
     min-height: 100%;
     background-position: center;
     background-size: cover;
-    overflow: hidden;
 }
 
 h2,
