@@ -61,6 +61,10 @@ a.w3-button {
     align-items: center;
 }
 
+img.sticker-img {
+    padding: 10px;
+}
+
 h4#link-title {
     font-family: "Chewy", sans-serif;
 }
