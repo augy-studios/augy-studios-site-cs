@@ -40,6 +40,7 @@ body,
 html {
     height: 100%;
     overflow: hidden;
+    scroll-behavior: smooth;
 }
 
 .bgimg {
@@ -96,6 +97,11 @@ h4#link-title {
 @media (min-width: 576px) {
     .sticker-div {
         max-width: 540px;
+    }
+
+    body,
+    html {
+        overflow-y: auto;
     }
 }
 
