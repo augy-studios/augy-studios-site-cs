@@ -5,6 +5,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    overflow: hidden;
     font-family: "Chewy", sans-serif;
 
     /* Chrome and Opera */
@@ -34,10 +35,6 @@ a.other-links:link {
 
 a.other-links:visited {
     color: #66f;
-}
-
-html {
-    scroll-behavior: smooth;
 }
 
 body,
