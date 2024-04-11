@@ -131,6 +131,10 @@ h4#link-title {
     color: black;
 }
 
+.hoverText {
+    display: none;
+}
+
 /* imported from /css/style.css */
 p.subtitle {
     padding-top: 1rem;
