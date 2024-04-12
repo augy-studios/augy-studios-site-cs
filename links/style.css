@@ -95,8 +95,8 @@ h4#link-title {
 }
 
 .margin-top-2 {
-    margin-top: 32px;
-    color: #9ff;
+    margin-top: 16px;
+    color: #d5b5fa;
 }
 
 @media (max-width: 630px) {
