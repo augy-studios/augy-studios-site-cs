@@ -106,7 +106,7 @@ h4#link-title {
 
     body,
     html {
-        overflow-y: auto;
+        overflow-y: initial;
     }
 }
 
