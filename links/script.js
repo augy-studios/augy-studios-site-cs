@@ -27,6 +27,18 @@ currentYearElement.textContent = currentYear;
 // Update the element with the id "textChange" based on query
 let textChange = document.getElementById("textChange")
 let urlParams = (new URL(document.location)).searchParams
+const setQuery = (arrayIndex) => {
+    // this extracts all the variables from the object
+    let {
+        name,
+        source,
+        query,
+        displayText,
+        extLink,
+        descHover,
+        status
+    } = queryList[arrayIndex]
+}
 switch ((urlParams.get("src")).toLowerCase()) {
     case "linktree":
         break
@@ -41,6 +53,7 @@ switch ((urlParams.get("src")).toLowerCase()) {
     case null:
     case "":
     case "def":
+        textChange.textContent
         break
     default:
         updateDefUrl()
