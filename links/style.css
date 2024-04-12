@@ -99,14 +99,16 @@ h4#link-title {
     color: #9ff;
 }
 
+@media (min-width: 630px) {
+    body,
+    html {
+        overflow-y: scroll;
+    }
+}
+
 @media (min-width: 576px) {
     .sticker-div {
         max-width: 540px;
-    }
-
-    body,
-    html {
-        overflow-y: initial;
     }
 }
 
