@@ -40,7 +40,8 @@
 	<meta property="og:site_name" content="Augy Studios" />
 	<meta property="og:url" content="https://augystudios.com/contact-us" />
 	<meta property="og:image" content="https://cdn.augystudios.com/media/ten-year-series/new-studios.png" />
-	<meta property="og:description" content="Augy Studios is an organisation that explores the limits of content creation, web application development and self-discovery." />
+	<meta property="og:description"
+		content="Augy Studios is an organisation that explores the limits of content creation, web application development and self-discovery." />
 
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css"
 		integrity="sha256-D9M5yrVDqFlla7nlELDaYZIpXfFWDytQtiV+TaH6F1I=" crossorigin="anonymous" />
@@ -124,14 +125,10 @@
 			</div>
 		</div>
 		<script>
-			// Get the current year
+			// Get the current year for the copyright footer text
 			let currentDate = new Date();
 			let currentYear = currentDate.getFullYear();
-
-			// Find the element with the id "currentYear"
-			let currentYearElement = document.getElementById("currentYear");
-
-			// Update the content of the element with the current year
+			let currentYearElement = document.getElementById("currentYear")
 			currentYearElement.textContent = currentYear;
 		</script>
 		<footer onclick="playNggyu()" style="color: black; text-align: center; font-size: small;">
