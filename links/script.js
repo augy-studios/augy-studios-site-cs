@@ -30,7 +30,7 @@ let textHover = document.getElementById("textHover")
 let titleHover = document.getElementById("titleHover")
 let descHover = document.getElementById("descHover")
 let urlParams = (new URL(document.location)).searchParams
-urlSrc = urlParams.get("src").toLowerCase()
+urlSrc = urlParams.get("src")
 
 function checkUrl() {
     if (!urlSrc || !queryList[urlSrc]) {
