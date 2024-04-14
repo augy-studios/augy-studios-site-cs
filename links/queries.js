@@ -1,4 +1,4 @@
-let queryList = [{
+queryList = [{
         name: "Default",
         source: "none",
         query: "def",
