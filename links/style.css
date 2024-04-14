@@ -61,6 +61,11 @@ a.w3-button {
     align-items: center;
 }
 
+a.textChange {
+    text-decoration: none;
+    cursor: help;
+}
+
 img.sticker-img {
     padding-right: 0.5em;
     padding-left: 0.5em;

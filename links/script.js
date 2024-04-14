@@ -26,41 +26,28 @@ currentYearElement.textContent = currentYear;
 
 // Update the element with the id "textChange" based on query
 let textChange = document.getElementById("textChange")
+let textHover = document.getElementById("textHover")
+let titleHover = document.getElementById("titleHover")
+let descHover = document.getElementById("descHover")
 let urlParams = (new URL(document.location)).searchParams
-const setQuery = (arrayIndex) => {
-    // this extracts all the variables from the object
-    let {
-        name,
-        source,
-        query,
-        displayText,
-        extLink,
-        descHover,
-        status
-    } = queryList[arrayIndex]
-}
-switch ((urlParams.get("src")).toLowerCase()) {
-    case "linktree":
-        break
-    case "tid":
-        break
-    case "nc-4":
-        break
-    case "lifc24":
-        break
-    case "furum24":
-        break
-    case null:
-    case "":
-    case "def":
-        textChange.textContent
-        break
-    default:
-        updateDefUrl()
-        break
-}
-
-function updateDefUrl() {
+urlSrc = urlParams.get("src").toLowerCase()
+if (!urlSrc || !queryList[urlSrc]) {
+    urlSrc = "def"
     history.pushState({}, "", "https://augystudios.com/links?src=def")
 }
-window.addEventListener("load", updateDefUrl)
+textChange.textContent = queryList[urlSrc]["displayText"]
+titleHover.textContent = queryList[urlSrc]["name"]
+descHover.textContent = queryList[urlSrc]["descHover"]
+if (queryList[urlSrc]["extLink"]) {
+    textChange.href = queryList[urlSrc]["extLink"]
+}
+textChange.addEventListener("mouseover", showHover)
+textChange.addEventListener("mouseout", hideHover)
+
+function showHover() {
+    textHover.style.display = "flex"
+}
+
+function hideHover() {
+    textHover.style.display = "none"
+}
