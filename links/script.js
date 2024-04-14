@@ -31,16 +31,22 @@ let titleHover = document.getElementById("titleHover")
 let descHover = document.getElementById("descHover")
 let urlParams = (new URL(document.location)).searchParams
 urlSrc = urlParams.get("src").toLowerCase()
-if (!urlSrc || !queryList[urlSrc]) {
-    urlSrc = "def"
-    history.pushState({}, "", "https://augystudios.com/links?src=def")
+
+function checkUrl() {
+    if (!urlSrc || !queryList[urlSrc]) {
+        urlSrc = "def"
+        history.pushState({}, "", "https://augystudios.com/links?src=def")
+    }
 }
+
 textChange.textContent = queryList[urlSrc]["displayText"]
 titleHover.textContent = queryList[urlSrc]["name"]
 descHover.textContent = queryList[urlSrc]["descHover"]
+
 if (queryList[urlSrc]["extLink"]) {
     textChange.href = queryList[urlSrc]["extLink"]
 }
+
 textChange.addEventListener("mouseover", showHover)
 textChange.addEventListener("mouseout", hideHover)
 
@@ -51,3 +57,5 @@ function showHover() {
 function hideHover() {
     textHover.style.display = "none"
 }
+
+window.addEventListener("load", checkUrl)
