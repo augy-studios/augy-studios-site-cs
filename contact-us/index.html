@@ -124,13 +124,6 @@
 					in the Contact Form!</p>
 			</div>
 		</div>
-		<script>
-			// Get the current year for the copyright footer text
-			let currentDate = new Date();
-			let currentYear = currentDate.getFullYear();
-			let currentYearElement = document.getElementById("currentYear")
-			currentYearElement.textContent = currentYear;
-		</script>
 		<footer onclick="playNggyu()" style="color: black; text-align: center; font-size: small;">
 			Made with <i class="fa fa-heart fa-fw heart"></i> in <a href="https://www.google.com/maps/place/Singapore"
 				target="_blank" style="text-decoration: none">Singapore</a> by &copy; Augy Studios 2013-<span
@@ -138,6 +131,14 @@
 		</footer>
 		<audio id="audio" src="https://cdn.augystudios.com/media/music/nggyu-piano-lt.mp3"></audio>
 	</div>
+
+	<script>
+		// Get the current year for the copyright footer text
+		let currentDate = new Date();
+		let currentYear = currentDate.getFullYear();
+		let currentYearElement = document.getElementById("currentYear")
+		currentYearElement.textContent = currentYear;
+	</script>
 </body>
 
 </html>
