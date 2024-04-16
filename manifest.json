@@ -1,0 +1,14 @@
+{
+    "name": "Augy Studios Links Page",
+    "short_name": "Augy Studios Links",
+    "icons": [{
+        "src": "favicon.ico",
+        "type": "image/png",
+        "sizes": "256x256"
+    }],
+    "start_url": ".",
+    "theme_color": "#99ff99",
+    "background_color": "#99ff99",
+    "display": "standalone",
+    "description": "Save this to access Augy's links easier next time!"
+}

@@ -76,14 +76,6 @@ let queryList = {
     }
 }
 
-// Update the element with the id "textChange" based on query
-let textChange = document.getElementById("textChange")
-let textHover = document.getElementById("textHover")
-let titleHover = document.getElementById("titleHover")
-let descHover = document.getElementById("descHover")
-let urlParams = (new URL(document.location)).searchParams
-urlSrc = urlParams.get("src")
-
 function checkUrl() {
     if (!urlSrc || !queryList[urlSrc]) {
         urlSrc = "def"
@@ -91,23 +83,46 @@ function checkUrl() {
     }
 }
 
-textChange.textContent = queryList[urlSrc]["displayText"]
-titleHover.textContent = queryList[urlSrc]["name"]
+// Update the element with the id "textChange" based on query
+let textChange = document.getElementById("textChange")
+let textOriginal = document.getElementById("textOriginal")
+let textHover = document.getElementById("textHover")
+let titleHover = document.getElementById("titleHover")
+let descHover = document.getElementById("descHover")
+let urlParams = (new URL(document.location)).searchParams
+
+urlSrc = urlParams.get("src")
+checkUrl()
+textOriginal.textContent = queryList[urlSrc]["displayText"]
 descHover.textContent = queryList[urlSrc]["descHover"]
 
 if (queryList[urlSrc]["extLink"]) {
     textChange.href = queryList[urlSrc]["extLink"]
 }
 
-textChange.addEventListener("mouseover", showHover)
-textChange.addEventListener("mouseout", hideHover)
+// Install the PWA if able
+let installPrompt = null;
+const installButton = document.querySelector("#install");
+window.addEventListener("beforeinstallprompt", (event) => {
+    event.preventDefault();
+    installPrompt = event;
+    installButton.removeAttribute("hidden");
+});
 
-function showHover() {
-    textHover.style.display = "flex"
+installButton.addEventListener("click", async () => {
+    if (!installPrompt) {
+        return;
+    }
+    const result = await installPrompt.prompt();
+    console.log(`Install prompt was: ${result.outcome}`);
+    disableInAppInstallPrompt();
+});
+
+window.addEventListener("appinstalled", () => {
+    disableInAppInstallPrompt();
+});
+
+function disableInAppInstallPrompt() {
+    installPrompt = null;
+    installButton.setAttribute("hidden", "");
 }
-
-function hideHover() {
-    textHover.style.display = "none"
-}
-
-window.addEventListener("load", checkUrl)
