@@ -110,10 +110,10 @@ h4#link-title {
     }
 }
 
-@media (max-width: 630px) {
+@media (max-width: 667px) {
     body,
     html {
-        overflow-y: visible;
+        overflow: visible;
     }
 }
 
