@@ -149,7 +149,12 @@ h4#link-title {
 }
 
 #installParent {
+    display: none;
     text-align: center;
+}
+
+#installParent.showTable {
+    display: block;
 }
 
 /* imported from /css/style.css */

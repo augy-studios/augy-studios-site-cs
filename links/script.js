@@ -127,14 +127,15 @@ function disableInAppInstallPrompt() {
     installButton.setAttribute("hidden", "");
 }
 
+let installParent = document.getElementById("installParent");
 const isTouchDevice = () => {
     try {
         //We try to create touch event. It would fail for desktops and throw an error.
         document.createEvent("TouchEvent");
-        installButton.removeAttribute("hidden");
+        installParent.classList.add("showTable");
         console.log("This is a touch device");
     } catch (e) {
-        installButton.setAttribute("hidden", "");
+        installParent.classList.remove("showTable");
         console.log("This is not a touch device");
     }
 };
