@@ -7,8 +7,8 @@
         "sizes": "256x256"
     }],
     "start_url": ".",
-    "theme_color": "#99ff99",
-    "background_color": "#99ff99",
+    "theme_color": "#9f9",
+    "background_color": "#9f9",
     "display": "standalone",
     "display_override": ["fullscreen", "minimal-ui"],
     "description": "Save this to access the Augy Studios website in your home screen!"
