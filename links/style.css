@@ -112,8 +112,9 @@ h4#link-title {
 
 @media (max-width: 667px) {
     body,
-    html {
-        overflow: visible;
+    html,
+    .w3-display-middle {
+        overflow-y: visible;
     }
 }
 
