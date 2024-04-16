@@ -10,5 +10,6 @@
     "theme_color": "#99ff99",
     "background_color": "#99ff99",
     "display": "standalone",
+    "display_override": ["fullscreen", "minimal-ui"],
     "description": "Save this to access the Augy Studios website in your home screen!"
 }
