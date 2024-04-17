@@ -1,6 +1,6 @@
 document.getElementById("socialsBtn").addEventListener("click", function() {
-    const link = "https://links.augystudios.com/";
-    const newWindow = window.open(link, "_blank");
+    const link = "https://augystudios.com/links";
+    const newWindow = window.open(link, "_self");
     if (!newWindow) {
         window.location.href = link;
     }
@@ -24,7 +24,7 @@ document.getElementById("expBtn").addEventListener("click", function() {
 
 document.getElementById("contactBtn").addEventListener("click", function() {
     const link = "https://augystudios.com/contact-us";
-    const newWindow = window.open(link, "_blank");
+    const newWindow = window.open(link, "_self");
     if (!newWindow) {
         window.location.href = link;
     }
