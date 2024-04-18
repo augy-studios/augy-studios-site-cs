@@ -102,41 +102,41 @@ if (queryList[urlSrc]["extLink"]) {
 
 // Install the PWA if able
 let installPrompt = null;
-const installButton = document.querySelector("#install");
+const installButton = document.querySelector("#install")
 window.addEventListener("beforeinstallprompt", (event) => {
-    event.preventDefault();
-    installPrompt = event;
-    installButton.removeAttribute("hidden");
-});
+    event.preventDefault()
+    installPrompt = event
+    installButton.removeAttribute("hidden")
+})
 
 installButton.addEventListener("click", async () => {
     if (!installPrompt) {
-        return;
+        return
     }
-    const result = await installPrompt.prompt();
-    console.log(`Install prompt was: ${result.outcome}`);
-    disableInAppInstallPrompt();
-});
+    const result = await installPrompt.prompt()
+    console.log(`Install prompt was: ${result.outcome}`)
+    disableInAppInstallPrompt()
+})
 
 window.addEventListener("appinstalled", () => {
-    disableInAppInstallPrompt();
-});
+    disableInAppInstallPrompt()
+})
 
 function disableInAppInstallPrompt() {
-    installPrompt = null;
-    installButton.setAttribute("hidden", "");
+    installPrompt = null
+    installButton.setAttribute("hidden", "")
 }
 
 let installParent = document.getElementById("installParent");
 const isTouchDevice = () => {
     try {
         //We try to create touch event. It would fail for desktops and throw an error.
-        document.createEvent("TouchEvent");
-        installParent.classList.add("showTable");
-        console.log("This is a touch device");
+        document.createEvent("TouchEvent")
+        installParent.classList.add("showTable")
+        console.log("This is a touch device")
     } catch (e) {
-        installParent.classList.remove("showTable");
-        console.log("This is not a touch device");
+        installParent.classList.remove("showTable")
+        console.log("This is not a touch device")
     }
-};
-isTouchDevice();
+}
+isTouchDevice()
