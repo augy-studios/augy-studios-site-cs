@@ -160,6 +160,7 @@ h4#link-title {
 
 small:hover a div {
     display: inline;
+    max-width: 100%;
 }
 
 /* imported from /css/style.css */
