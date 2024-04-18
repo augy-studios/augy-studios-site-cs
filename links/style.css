@@ -159,7 +159,7 @@ h4#link-title {
 }
 
 small:hover a div {
-    display: flex;
+    display: inline;
 }
 
 /* imported from /css/style.css */
