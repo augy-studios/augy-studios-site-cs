@@ -70,8 +70,8 @@ let queryList = {
         name: "LIFC 2024",
         source: "lifc24-conbadge",
         displayText: "You scanned the NFC Tag on Augy's Little Island Furcon (LIFC) 2024 Conbadge!",
-        extLink: "https://augystudios.com/",
-        descHover: "LIFC is a furry convention held annually in Singapore.",
+        extLink: "https://furcon.augystudios.com/sg/lifc-2024",
+        descHover: "LIFC is a furry convention held annually in Singapore. This year, Augy is both volunteering and is a Super Sponsor!",
         status: "active",
     },
     furum24: {
