@@ -85,7 +85,7 @@ h4#link-title {
 }
 
 .links-div {
-    display: flex;
+    display: inline-block;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -93,6 +93,19 @@ h4#link-title {
 
 .links-div a {
     width: 100%;
+}
+
+small {
+    white-space: nowrap;
+    position: absolute;
+    left: 0;
+    right: 0;
+    display: block;
+}
+
+.hoverDesc {
+    max-width: unset;
+    white-space: initial;
 }
 
 .w3-theme-l1:hover {
@@ -111,6 +124,7 @@ h4#link-title {
 }
 
 @media (max-width: 667px) {
+
     body,
     html,
     .w3-display-middle {
