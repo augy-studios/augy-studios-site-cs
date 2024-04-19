@@ -82,6 +82,8 @@ h4#link-title {
     padding-left: 15px;
     margin-right: auto;
     margin-left: auto;
+    align-content: center;
+    text-align: center;
 }
 
 .links-div {
