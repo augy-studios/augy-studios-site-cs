@@ -173,6 +173,7 @@ const isTouchDevice = () => {
         //We try to create touch event. It would fail for desktops and throw an error.
         document.createEvent("TouchEvent")
         installParent.classList.add("showTable")
+        descHover.textContent.replace("Click", "Tap").replace("click", "tap")
         console.log("This is a touch device")
     } catch (e) {
         installParent.classList.remove("showTable")
