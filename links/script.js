@@ -79,7 +79,7 @@ let queryList = {
         source: "bizcard-1",
         displayText: "You scanned the QR code on the first ever Augy Studios business card!",
         extLink: "https://augystudios.com/",
-        descHover: "This is also Augy's first time creating a translucent name card! Click to go to the Augy Studios website.",
+        descHover: "This is also Augy's first time creating a translucent name card; it took 7 iterations to get to this current design! Click to go to the Augy Studios website.",
         status: "active",
     },
     "nc-1": {
