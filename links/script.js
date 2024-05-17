@@ -134,7 +134,8 @@ let urlParams = (new URL(document.location)).searchParams
 urlSrc = urlParams.get("src")
 checkUrl()
 textOriginal.textContent = queryList[urlSrc]["displayText"]
-descHover.textContent = queryList[urlSrc]["descHover"]
+let descHoverText = descHover.textContent
+descHoverText = queryList[urlSrc]["descHover"]
 let queryStatus = queryList[urlSrc]["status"]
 
 if (queryList[urlSrc]["extLink"]) {
@@ -145,7 +146,7 @@ if (queryStatus == "inactive") {
     urlSrc = "def"
     history.pushState({}, "", "https://augystudios.com/links?src=def")
     textOriginal.textContent = queryList[urlSrc]["displayText"]
-    descHover.textContent = queryList[urlSrc]["descHover"]
+    descHoverText = queryList[urlSrc]["descHover"]
 }
 
 // Install the PWA if able
@@ -188,7 +189,7 @@ const isTouchDevice = () => {
         //We try to create touch event. It would fail for desktops and throw an error.
         document.createEvent("TouchEvent")
         installParent.classList.add("showTable")
-        descHover.textContent.replace("Click", "Tap").replace("click", "tap")
+        descHoverText.replace("Click", "Tap").replace("click", "tap")
         console.log("This is a touch device")
     } catch (e) {
         installParent.classList.remove("showTable")
