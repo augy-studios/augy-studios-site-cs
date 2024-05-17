@@ -170,12 +170,18 @@ window.addEventListener("appinstalled", () => {
     disableInAppInstallPrompt()
 })
 
+if (window.matchMedia('(display-mode: standalone)').matches) {
+    console.log("This is running as standalone.")
+    disableInAppInstallPrompt()
+}
+
 function disableInAppInstallPrompt() {
     installPrompt = null
     installButton.setAttribute("hidden", "")
 }
 
 let installParent = document.getElementById("installParent");
+
 const isTouchDevice = () => {
     try {
         //We try to create touch event. It would fail for desktops and throw an error.
