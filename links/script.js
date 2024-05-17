@@ -144,7 +144,8 @@ if (queryList[urlSrc]["extLink"]) {
 if (queryStatus == "inactive") {
     urlSrc = "def"
     history.pushState({}, "", "https://augystudios.com/links?src=def")
-    checkUrl()
+    textOriginal.textContent = queryList[urlSrc]["displayText"]
+    descHover.textContent = queryList[urlSrc]["descHover"]
 }
 
 // Install the PWA if able
