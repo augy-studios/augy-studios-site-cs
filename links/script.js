@@ -178,6 +178,7 @@ if (window.matchMedia('(display-mode: standalone)').matches) {
 function disableInAppInstallPrompt() {
     installPrompt = null
     installButton.setAttribute("hidden", "")
+    console.log("Install prompt hidden")
 }
 
 let installParent = document.getElementById("installParent");
