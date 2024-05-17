@@ -134,8 +134,7 @@ let urlParams = (new URL(document.location)).searchParams
 urlSrc = urlParams.get("src")
 checkUrl()
 textOriginal.textContent = queryList[urlSrc]["displayText"]
-let descHoverText = descHover.textContent
-descHoverText = queryList[urlSrc]["descHover"]
+let descHoverText = descHover.textContent = queryList[urlSrc]["descHover"]
 let queryStatus = queryList[urlSrc]["status"]
 
 if (queryList[urlSrc]["extLink"]) {
