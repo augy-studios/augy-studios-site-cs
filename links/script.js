@@ -135,9 +135,15 @@ urlSrc = urlParams.get("src")
 checkUrl()
 textOriginal.textContent = queryList[urlSrc]["displayText"]
 descHover.textContent = queryList[urlSrc]["descHover"]
+let queryStatus = queryList[urlSrc]["status"]
 
 if (queryList[urlSrc]["extLink"]) {
     textChange.href = queryList[urlSrc]["extLink"]
+}
+
+if (queryStatus == "inactive") {
+    urlSrc = "def"
+    history.pushState({}, "", "https://augystudios.com/links?src=def")
 }
 
 // Install the PWA if able
