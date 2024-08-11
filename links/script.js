@@ -93,7 +93,7 @@ let queryList = {
     "nc-3": {
         name: "Augy's Name Card 3",
         source: "namecard-3",
-        displayText: "Yay, you received Augy's 3rd iteration of his Name Card! This card was designed by Decro (TwistedSnakes)!",
+        displayText: "Yay, you received Augy's 3rd iteration of his Name Card! \nThis card was designed by Decro (TwistedSnakes)!",
         extLink: "https://augystudios.com/",
         descHover: "A furry name card is a personal creation that displays everything you need to know about the person you met. Augy's 3rd name card features his new Telegram sticker pack's sticker.",
         status: "active",
