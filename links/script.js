@@ -94,8 +94,8 @@ let queryList = {
         name: "Augy's Name Card 3",
         source: "namecard-3",
         displayText: "Yay, you received Augy's 3rd iteration of his Name Card!",
-        extLink: "https://augystudios.com/",
-        descHover: "The 3rd namecard was designed by Decro (TwistedSnakes)!",
+        extLink: "https://twistedsnakes.com/",
+        descHover: "The 3rd namecard was designed by Decro (TwistedSnakes)! Click here to go to his website!",
         status: "active",
     },
     lifc24: {
