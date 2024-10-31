@@ -1,11 +1,6 @@
 {
     "redirects": [
         {
-            "source": "/atlasvpn",
-            "destination": "https://partner.vpnatlas.com/aff_c?offer_id=69&aff_id=1421",
-            "statusCode": 307
-        },
-        {
             "source": "/bizcard-1",
             "destination": "https://augystudios.com/links?src=biz-1",
             "statusCode": 307
@@ -28,11 +23,6 @@
         {
             "source": "/moneyconvert",
             "destination": "https://convertcurrencyfor.me/",
-            "statusCode": 307
-        },
-        {
-            "source": "/nordvpn",
-            "destination": "https://go.nordvpn.net/aff_c?offer_id=612&aff_id=68877&url_id=14830",
             "statusCode": 307
         },
         {
